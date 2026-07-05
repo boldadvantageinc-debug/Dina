@@ -6,40 +6,56 @@
 
 # --- Who you are -------------------------------------------------------------
 brand:
-  # Your niche in one line. Be specific — "AI tools for solopreneurs" beats "tech".
-  niche: "AI tools and automation for solopreneurs"
+  # Your niche in one line. Be specific.
+  niche: "Training & mentorship for women in dental administration — the dental front desk, from brand-new hire to office manager"
 
   # 2-4 sentences on your voice/personality. This shapes tone of every idea.
   voice: >
-    Practical, no-hype, slightly contrarian. I cut through AI overwhelm and show
-    real workflows that save hours. Confident but not salesy. I talk to smart
-    people who are busy, not beginners who need hand-holding.
+    Warm, encouraging "big-sister energy" — a mentor's voice, not a textbook.
+    Polished, calm, and beginner-safe with zero jargon-shaming. Confident and
+    supportive: I make overwhelmed front-desk women feel capable and seen, never
+    judged or talked down to. The structured training the dental industry forgot
+    to give them.
 
   # Who you want in your audience AND who you eventually want to sell to.
-  target_audience: "Solo founders and freelancers earning $2k-$20k/mo who feel behind on AI"
+  target_audience: >
+    Women in or entering dental front-desk / admin roles: brand-new hires thrown
+    in without training, career changers and returners with no dental experience,
+    and strong admins ready to step into office-manager leadership. Primarily
+    Canada, with some global reach.
 
-  # What you actually sell (or plan to). Ideas will be tied back to this funnel.
-  offer: "A paid course + templates that set up an AI-assisted content & ops system"
+  # What you actually sell. Ideas will be tied back to this funnel.
+  offer: >
+    Three self-paced Polished programs (lifetime access): the 90 Day Career Launch
+    (Canadian beginner roadmap — insurance, scheduling, patient communication),
+    Dental Admin x AI (practical AI workflows for the front desk), and The Polished
+    Office Manager (systems for hiring, KPIs, team meetings, and leading a calm,
+    profitable practice).
 
 # --- What to mine ------------------------------------------------------------
 # Accounts / creators in your niche whose content is worth reframing. Handles
 # or names both work — Claude searches the web for their recent standout posts.
+# TIP: replace these seed phrases with the real @handles of dental-admin /
+# front-desk creators you admire once you know them — you'll get sharper results.
 competitors:
-  - "@thedankoe"
-  - "@blackhatwizardd"
-  - "@heyeaton"
+  - "dental front desk trainers and coaches on Instagram"
+  - "dental office manager educators on Instagram"
+  - "dental practice management / front office creators on Instagram"
 
 # Hashtags / search terms that surface trending content in your space.
 hashtags:
-  - "#aitools"
-  - "#solopreneur"
-  - "#buildinpublic"
-  - "#contentcreation"
+  - "#dentalfrontdesk"
+  - "#dentaladmin"
+  - "#dentalofficemanager"
+  - "#dentalfrontoffice"
+  - "#dentaladministration"
+  - "#dentalpracticemanagement"
 
 # Topics you never want suggested (off-brand, done to death, etc.). Optional.
 avoid:
-  - "generic 'AI will replace you' fear-bait"
-  - "crypto / dropshipping"
+  - "clinical / cold / textbook tone or any jargon-shaming"
+  - "clinical or chairside dentistry (this is about the ADMIN / front desk, not dentists or hygienists)"
+  - "fear-bait like 'AI will replace dental admins'"
 
 # --- Engine ------------------------------------------------------------------
 model: "claude-opus-4-8"     # Anthropic model id. Leave as-is unless you know better.
@@ -60,4 +76,4 @@ output_dir: "reports"        # Daily markdown reports land here (dated filenames
 #   EMAIL_TO    where to send it   (defaults to SMTP_USER)
 #   EMAIL_FROM  from address       (defaults to SMTP_USER)
 email:
-  subject_prefix: "📈 Instagram ideas"
+  subject_prefix: "📈 Polished Admin — Instagram ideas"
