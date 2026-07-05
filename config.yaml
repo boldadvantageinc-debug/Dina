@@ -48,3 +48,16 @@ num_reel_ideas: 3            # How many trial reel ideas per day.
 
 # --- Output ------------------------------------------------------------------
 output_dir: "reports"        # Daily markdown reports land here (dated filenames).
+
+# --- Email delivery (optional) ----------------------------------------------
+# The report is ALWAYS saved to output_dir. Email is an extra push on top and
+# only fires when SMTP credentials are present in the environment (never in
+# this file). Set these env vars / GitHub secrets to turn it on:
+#   SMTP_HOST   e.g. smtp.gmail.com
+#   SMTP_PORT   587 (STARTTLS, default) or 465 (SSL)
+#   SMTP_USER   the sending account
+#   SMTP_PASS   an app password (for Gmail: create one, don't use your login)
+#   EMAIL_TO    where to send it   (defaults to SMTP_USER)
+#   EMAIL_FROM  from address       (defaults to SMTP_USER)
+email:
+  subject_prefix: "📈 Instagram ideas"
