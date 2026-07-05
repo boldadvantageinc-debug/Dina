@@ -35,12 +35,13 @@ brand:
 # --- What to mine ------------------------------------------------------------
 # Accounts / creators in your niche whose content is worth reframing. Handles
 # or names both work — Claude searches the web for their recent standout posts.
-# TIP: replace these seed phrases with the real @handles of dental-admin /
-# front-desk creators you admire once you know them — you'll get sharper results.
 competitors:
-  - "dental front desk trainers and coaches on Instagram"
-  - "dental office manager educators on Instagram"
-  - "dental practice management / front office creators on Instagram"
+  - "@ddsadministration"   # dental administration
+  - "@dr.baotran"
+  - "@the.sam.patel"
+  - "@kirkteachout"
+  - "@dr.yohanchoi"
+  - "@dr.nickc"
 
 # Hashtags / search terms that surface trending content in your space.
 hashtags:
