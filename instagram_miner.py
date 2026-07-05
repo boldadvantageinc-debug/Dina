@@ -61,6 +61,17 @@ def load_config() -> dict:
     return cfg
 
 
+def load_brand_voice() -> str:
+    """Load brand_voice.md if present — the single source of truth for tone.
+
+    Kept in its own file (not config.yaml) so it can hold long-form voice rules,
+    do/don't lists, and example phrasing — mirroring the brand-voice guidance you
+    maintain in your Claude skills, but available to this headless tool.
+    """
+    p = HERE / "brand_voice.md"
+    return p.read_text(encoding="utf-8").strip() if p.exists() else ""
+
+
 def _brand_block(cfg: dict) -> str:
     b = cfg["brand"]
     lines = [
@@ -180,11 +191,16 @@ def _idea_schema(cfg: dict) -> dict:
 def generate_ideas(client: anthropic.Anthropic, cfg: dict, research: str, today: str) -> dict:
     n_posts = cfg["num_post_ideas"]
     n_reels = cfg["num_reel_ideas"]
+    voice = load_brand_voice()
+    voice_section = (
+        f"\nBRAND VOICE GUIDE — every caption, hook, and script MUST follow this exactly:\n{voice}\n"
+        if voice else ""
+    )
     prompt = f"""Today is {today}. You are the creator's ghostwriter and content strategist.
 
 BRAND:
 {_brand_block(cfg)}
-
+{voice_section}
 RESEARCH BRIEF (what's working in the niche right now):
 {research}
 

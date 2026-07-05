@@ -43,12 +43,21 @@ Everything that personalizes the output lives in one file. The most important fi
 | Field | Why it matters |
 |-------|----------------|
 | `brand.niche` | Anchors all research and ideas. Be specific. |
-| `brand.voice` | Ideas + captions are written in this tone. |
+| `brand.voice` | A short tone summary. |
 | `brand.target_audience` | Who the content is designed to attract. |
 | `brand.offer` | Every idea gets a "funnel tie-in" pointing here. |
 | `competitors` | Accounts/creators Claude studies for reusable patterns. |
 | `hashtags` | Search terms that surface trending content. |
 | `avoid` | Topics/angles you never want suggested. |
+
+### `brand_voice.md` — the full voice guide
+
+For deep control over *how it sounds*, edit **`brand_voice.md`**. If that file
+exists, Dina injects it into the generation prompt and every caption, hook, and
+reel script must follow it exactly. It's the place for long-form voice rules,
+do/don't lists, and signature phrasing (mirroring the brand voice you keep in
+your Claude skills). The more precise this file, the more the ideas sound like
+*you*. Delete the file to fall back to just the short `brand.voice` line.
 
 ---
 
