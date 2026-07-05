@@ -1,0 +1,50 @@
+# ============================================================================
+#  Dina — Instagram content-mining config
+#  Edit THIS file to make the daily ideas match *your* brand. Nothing else
+#  needs changing to get started.
+# ============================================================================
+
+# --- Who you are -------------------------------------------------------------
+brand:
+  # Your niche in one line. Be specific — "AI tools for solopreneurs" beats "tech".
+  niche: "AI tools and automation for solopreneurs"
+
+  # 2-4 sentences on your voice/personality. This shapes tone of every idea.
+  voice: >
+    Practical, no-hype, slightly contrarian. I cut through AI overwhelm and show
+    real workflows that save hours. Confident but not salesy. I talk to smart
+    people who are busy, not beginners who need hand-holding.
+
+  # Who you want in your audience AND who you eventually want to sell to.
+  target_audience: "Solo founders and freelancers earning $2k-$20k/mo who feel behind on AI"
+
+  # What you actually sell (or plan to). Ideas will be tied back to this funnel.
+  offer: "A paid course + templates that set up an AI-assisted content & ops system"
+
+# --- What to mine ------------------------------------------------------------
+# Accounts / creators in your niche whose content is worth reframing. Handles
+# or names both work — Claude searches the web for their recent standout posts.
+competitors:
+  - "@thedankoe"
+  - "@blackhatwizardd"
+  - "@heyeaton"
+
+# Hashtags / search terms that surface trending content in your space.
+hashtags:
+  - "#aitools"
+  - "#solopreneur"
+  - "#buildinpublic"
+  - "#contentcreation"
+
+# Topics you never want suggested (off-brand, done to death, etc.). Optional.
+avoid:
+  - "generic 'AI will replace you' fear-bait"
+  - "crypto / dropshipping"
+
+# --- Engine ------------------------------------------------------------------
+model: "claude-opus-4-8"     # Anthropic model id. Leave as-is unless you know better.
+num_post_ideas: 3            # How many post ideas per day.
+num_reel_ideas: 3            # How many trial reel ideas per day.
+
+# --- Output ------------------------------------------------------------------
+output_dir: "reports"        # Daily markdown reports land here (dated filenames).

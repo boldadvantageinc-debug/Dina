@@ -1,0 +1,4 @@
+# Dina — Instagram content miner
+# Use a recent anthropic SDK: web_search_20260209 + output_config.format need it.
+anthropic>=0.69.0
+PyYAML>=6.0
