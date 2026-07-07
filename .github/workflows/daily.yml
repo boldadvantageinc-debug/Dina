@@ -32,7 +32,13 @@ jobs:
           SMTP_PASS: ${{ secrets.SMTP_PASS }}
           EMAIL_TO: ${{ secrets.EMAIL_TO }}
           EMAIL_FROM: ${{ secrets.EMAIL_FROM }}
-        run: python instagram_miner.py
+        run: |
+          if [ -z "$ANTHROPIC_API_KEY" ]; then
+            echo "ANTHROPIC_API_KEY secret is not set yet — skipping today's run."
+            echo "Add it under Settings → Secrets and variables → Actions to go live."
+            exit 0
+          fi
+          python instagram_miner.py
 
       - name: Commit report
         run: |
